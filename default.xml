@@ -584,7 +584,11 @@
   <project path="vendor/cm" name="CyanogenMod/android_vendor_cm" />
   <project path="vendor/cmsdk" name="CyanogenMod/cm_platform_sdk" />
   
-   <project path="device/lenovo/Tab2A710F" name="thp1997/android_device_lenovo_Tab2A710F " revision="master" />
-   <project path="vendor/lenovo/Tab2A710F" name="thp1997/android_vendor_lenovo_Tab2A710F " revision="master" />	
+   <project path="device/lenovo/Tab2A710F" name="
+Cyanogenmod-for-Lenovo-Tab2A7-10F
+/android_device_lenovo_Tab2A710F " revision="master" />
+   <project path="vendor/lenovo/Tab2A710F" name="
+Cyanogenmod-for-Lenovo-Tab2A7-10F
+/android_vendor_lenovo_Tab2A710F " revision="master" />	
     
 </manifest>
