@@ -1,25 +1,43 @@
-CyanogenMod 12.1 for Lenovo Tab 2 A7-10F
-========================================
+CyanogenMod for Lenovo Tab2 A7-10F, branch cm12.1
 
-Getting Started
----------------
+Local manifests for building cm12.1 rom, for tablet Lenovo Tab2 A7-10F
 
+How to use :
 
-To Sync
----------------
-    repo init -u git://github.com/Cyanogenmod-for-Lenovo-Tab2A7-10F/android.git -b cm-12.1
+Yes all the source code is available on Github.
 
-Then to sync up:
-----------------
+These are the steps to build this rom.
 
-    repo sync
-    
-Initialize Building Environment
--------------------------------
-    source build/envsetup.sh
+Install a suitable OS. You can use a virtual machine running Ubuntu 14.04 64-bit, or a physical one : both are supported.
 
-Start Building
---------------
-    brunch cm_Tab2A710F-userdebug
+Prepare the system, do steps 1, 2 and 5 of this guide, to configure your development machine :
 
+http://forum.xda-developers.com/showthread.php?t=1762641 Tutorial To Compile on Ubuntu - xda-developers
 
+WARNING : To have success when building ROMs from repository, it's required to use Java-7 JRE (1.7) If you don't use this one, you'll have unpredictable errors, like C header files malformed.
+
+It's recommanded to have a PATH pointing the right Java JRE at first position, in your environment !
+
+Then run these commands:
+
+mkdir YOUR_ WORKING_DIR
+
+cd YOUR_WORKING_DIR
+
+repo init -u git://github.com/CyanogenMod/android.git -b cm-12.1
+
+mkdir .repo/local_manifests
+
+curl https://raw.github.com/Cyanogenmod-for-Lenovo-Tab2A7-10F/android/cm12.1r/Tab2A710F_manifest.xml > .repo/local_manifests/Tab2A710F_manifest.xml
+
+repo sync
+
+The sync will take a while and download something like 15 GB of source code.
+
+Finally build the rom with these commands:
+
+� source build/envsetup.sh
+
+� brunch Tab2A710F
+
+If all goes well this will create a zip file into 'out' folder, that can be flashed on the tablet!
