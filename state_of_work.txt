@@ -1,0 +1,23 @@
+I propose to use this file to describe the state of repository (date, author, nature of modification, result)
+
+10/21/2016  Doume Create branch cm-13.0
+  I have neutralized hostapd into BoardConfig.mk (compilation fails otherwise)
+    Note : IMHO, hostapd has no sense on a tablet having no telephony to share !
+  I have neutralized BOARD_HAS_BLUETOOTH_MTK into BoardConfig.mk line 103
+  
+  To have a successfull build, 
+  I was forced to create manually following folder :
+   mkdir -p ./out/target/product/Tab2A710F/obj/KERNEL_OBJ/usr
+   
+   Otherwise, a fatal error occurs :
+   ---------------------------------
+   
+   make: *** No rule to build the target « /storage2/cm13.0/out/target/product/Tab2A710F/obj/KERNEL_OBJ/usr », 
+     required for « /storage2/cm13.0/out/target/product/Tab2A710F/obj/SHARED_LIBRARIES/libtinyalsa_intermediates/mixer.o ». 
+     Stop.
+
+  At 17:36 CET time :
+      Build success.
+      
+  But : the rom does'nt boot : After Lenovo logo, no CM boot animation ==> reboot in recovery !
+  
