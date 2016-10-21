@@ -1,6 +1,8 @@
-CyanogenMod for Lenovo Tab2 A7-10F, branch cm12.1
+CyanogenMod for Lenovo Tab2 A7-10F, branch cm13.0
 
-Local manifests for building cm12.1 rom, for tablet Lenovo Tab2 A7-10F
+Local manifests for building cm13.0 rom, for tablet Lenovo Tab2 A7-10F
+
+WARNING : Work in progress, not yet usable !
 
 How to use :
 
@@ -24,11 +26,11 @@ mkdir YOUR_ WORKING_DIR
 
 cd YOUR_WORKING_DIR
 
-repo init -u git://github.com/CyanogenMod/android.git -b cm-12.1
+repo init -u git://github.com/CyanogenMod/android.git -b cm-13.0
 
 mkdir .repo/local_manifests
 
-curl https://raw.githubusercontent.com/Cyanogenmod-for-Lenovo-Tab2A7-10F/android/cm-12.1/Tab2A710F_manifest.xml > .repo/local_manifests/Tab2A710F_manifest.xml
+curl https://raw.githubusercontent.com/Cyanogenmod-for-Lenovo-Tab2A7-10F/android/cm-13.0/Tab2A710F_manifest.xml > .repo/local_manifests/Tab2A710F_manifest.xml
 
 repo sync
 
