@@ -4,37 +4,17 @@
    <remote name="lenovo"        fetch="https://github.com/Cyanogenmod-for-Lenovo-Tab2A7-10F" />
  
   <!-- list packages to remove from standard build    -->
-   <remove-project name="CyanogenMod/android_system_netd" /> 
    
 	<!-- If you don't build on a Mac system, you can remove all 'darwin' prebuilts -->
-  	<remove-project name="platform/prebuilts/clang/darwin-x86/3.1" />
-  	<remove-project name="platform/prebuilts/clang/darwin-x86/3.2" />
-  	<remove-project name="platform/prebuilts/clang/darwin-x86/arm/3.3" />
-  	<remove-project name="platform/prebuilts/clang/darwin-x86/host/3.4"  />
-  	<remove-project name="platform/prebuilts/clang/darwin-x86/host/3.5" />
-  	<remove-project name="platform/prebuilts/clang/darwin-x86/mips/3.3" />
-  	<remove-project name="platform/prebuilts/clang/darwin-x86/x86/3.3" />
- 	  <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.8" />
-  	<remove-project name="CyanogenMod/android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" />
-  	<remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" />
-  	<remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.8" />
-  	<remove-project name="platform/prebuilts/gcc/darwin-x86/host/headers" />
-  	<remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
-  	<remove-project name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" />
-  	<remove-project name="platform/prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.8" />
-  	<remove-project name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.8" />
-  	<remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.8" />
-  	<remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
-  	<remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
+  	
  	<!-- end of 'darwin' components -->
 
   <!-- declare packages replacements  -->
-   <project path="system/netd" name="android_system_netd" remote="lenovo" revision="cm-12.1" />
-  
+   
   <!-- declare additional packages to build -->
   
   <!-- And finally checkout components specifics to Lenovo Tab2 A7-10F -->
-   <project path="device/lenovo/Tab2A710F" name="android_device_lenovo_Tab2A710F" remote="lenovo" revision="cm-12.1" />
-   <project path="vendor/lenovo/Tab2A710F" name="android_vendor_lenovo_Tab2A710F" remote="lenovo" revision="cm-12.1" />	
+   <project path="device/lenovo/Tab2A710F" name="android_device_lenovo_Tab2A710F" remote="lenovo" revision="cm-13.0" />
+   <project path="vendor/lenovo/Tab2A710F" name="android_vendor_lenovo_Tab2A710F" remote="lenovo" revision="cm-13.0" />	
   
 </manifest>
