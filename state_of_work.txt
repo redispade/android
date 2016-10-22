@@ -21,3 +21,8 @@ I propose to use this file to describe the state of repository (date, author, na
       Build success.
       
   But : the rom does'nt boot : After Lenovo logo, no CM boot animation ==> reboot in recovery !
+
+10/22/2016   Tirth  Fix build error about missing directory
+   Problem of fatal error on build would be fixed 
+   
+   
