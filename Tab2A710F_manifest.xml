@@ -28,10 +28,12 @@
   <!-- list packages to remove from standard build    -->
    <remove-project name="CyanogenMod/android_system_netd" /> 
    <remove-project name="CyanogenMod/android_packages_apps_Settings" />
+   <remove-project name="CyanogenMod/android_frameworks_base" />
 	
   <!-- declare packages replacements  -->
    <project path="system/netd" name="android_system_netd" remote="lenovo" revision="cm-12.1" />   	   
    <project path="packages/apps/Settings" name="cm_packages_apps_Settings" remote="lenovo" revision="cm-12.1" />
+   <project path="frameworks/base" name="android_frameworks_base" remote="lenovo" revision="cm-12.1" />
 
   <!-- declare additional packages to build -->
 
