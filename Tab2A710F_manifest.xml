@@ -5,7 +5,7 @@
  
   <!-- list packages to remove from standard build    -->
    <remove-project name="CyanogenMod/android_system_netd" /> 
-   <remove-project name="Cyanogenmod/android_packages_apps_Settings">
+   <remove-project name="Cyanogenmod/android_packages_apps_Settings" />
 	   
 	<!-- If you don't build on a Mac system, you can remove all 'darwin' prebuilts -->
   	<remove-project name="platform/prebuilts/clang/darwin-x86/3.1" />
