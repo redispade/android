@@ -30,8 +30,8 @@
  	<!-- end of 'darwin' components -->
 
   <!-- declare packages replacements  -->
-   <project path="system/netd" name="android_system_netd" remote="lenovo" revision="cm-12.1" />
-  
+   <project path="system/netd" name="android_system_netd" remote="lenovo" revision="cm-12.1" />   	   
+   <project path="packages/apps/Settings" name="cm_packages_apps_Settings" remote="lenovo" revision="cm-12.1" />
   <!-- declare additional packages to build -->
   
   <!-- And finally checkout components specifics to Lenovo Tab2 A7-10F -->
